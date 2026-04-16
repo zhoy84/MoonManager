@@ -1,9 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "MoonManager.html", "use": "@vercel/static" },
-    { "src": "**/*.css", "use": "@vercel/static" },
-    { "src": "**/*.svg", "use": "@vercel/static" }
+    { "src": "**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/", "dest": "/MoonManager.html" }
