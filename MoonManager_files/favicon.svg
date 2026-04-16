@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 背景 -->
+  <circle cx="32" cy="32" r="31" fill="#1a1a2e"/>
+  <!-- 外圈 -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#e94560" stroke-width="2"/>
+  <!-- 月牙 -->
+  <path d="M 26 15 A 16 16 0 1 0 26 49" fill="none" stroke="#f0f0f0" stroke-width="4"/>
+  <!-- MM 白色大字 -->
+  <text x="32" y="38" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#ffffff">MM</text>
+</svg>
