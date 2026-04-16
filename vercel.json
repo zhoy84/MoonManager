@@ -6,19 +6,20 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/MoonManager.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/MoonManager.html" }
   ],
   "headers": [
     {
+      "source": "/(.*\\.(css|js|json|png|jpg|jpeg|gif|svg|woff|woff2|ttf|e2))",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src *; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data;" }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
-        }
+        { "key": "Content-Security-Policy", "value": "default-src *; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data;" }
       ]
     }
   ]
